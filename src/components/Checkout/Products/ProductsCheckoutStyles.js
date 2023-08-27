@@ -57,6 +57,7 @@ export const SubtotalStyled = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: white;
 `;
 
 export const EnvioStyled = styled(SubtotalStyled)``;
@@ -64,7 +65,7 @@ export const EnvioStyled = styled(SubtotalStyled)``;
 export const TotalStyled = styled(SubtotalStyled)``;
 
 export const PriceTotalStyled = styled.span`
-  color: #ff7a00;
+  color: white;
   font-weight: 800;
   font-size: 1.3rem;
 `;
