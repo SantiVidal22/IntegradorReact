@@ -2,7 +2,6 @@ import React from 'react'
 import { CardCategoria, ImgStyled } from './CategoriesStyles'
 import { selectCategory } from '../../redux/categories/categoriesSlice';
 import { useDispatch, useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
 
 export const Category = ({img, title, category}) => {
 

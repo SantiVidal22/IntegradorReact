@@ -106,12 +106,12 @@ export const ModalOverlayStyled = styled(motion.div)`
   z-index: 50;
   width: calc(100vw - 450px);
   height: 100vh;
-
+  
   ${({ isHidden }) =>
-    !isHidden &&
-    css`
+   !isHidden &&
+   css`
       backdrop-filter: blur(4px);
-    `}
+   `}
 `;
 
 export const CartNavStyled = styled.div`

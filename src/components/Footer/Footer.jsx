@@ -11,7 +11,7 @@ const Footer = () => {
     <FooterContainerStyled>
         <LinksContainerStyled>
             <img src="https://res.cloudinary.com/dmloe0isx/image/upload/v1689517178/wqetvt3wcxlehc2ctdgd.png" alt="" />
-            <a href="#">GOODBURGUER</a>
+            <a href='http://localhost:3000/'>GOODBURGUER</a>
             <p>RIO GALLEGOS - SANTA CRUZ</p>
             <Link to = '/profileform'>
               CONTACTO

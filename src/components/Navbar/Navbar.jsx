@@ -48,7 +48,10 @@ function Navbar() {
             </motion.div>
           </MenuuContainerStyled>
           <UserNavStyled>
-              <UserContainerStyled onClick={() => currentUser ? dispatch(toggleMenuHidden()) : navigate("/login")}>
+              <UserContainerStyled onClick={() => 
+                currentUser ? dispatch(toggleMenuHidden()) 
+                : navigate("/login")
+              }>
                 <SpanStyled>
                   {
                     currentUser ? `${currentUser.nombre}` : 'Iniciá sesion'

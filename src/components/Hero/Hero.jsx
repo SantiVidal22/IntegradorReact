@@ -1,7 +1,6 @@
 import React from 'react'
 import { HeroContainerStyled, HeroImageContainerStyled, HeroTextContainerStyled, HeroBenefitsContainerStyled, HeroCardStyled} from './HeroStyles'
 import {motion} from "framer-motion"
-import Button from '../UI/Button/Button'
 import {PiForkKnife} from "react-icons/pi"
 import {BiDroplet} from "react-icons/bi"
 import {PiPlant} from "react-icons/pi"

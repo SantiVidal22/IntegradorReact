@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 import { SHIPPING_COST } from "../../utils/constants"
 import { addItemToCart, removeItemFromCart, resetShippingCost } from "./cartUtils"
 
@@ -9,7 +9,7 @@ const INITIAL_STATE = {
 };
 
 const cartSlice = createSlice({
-    name: "cart",
+    name: 'cart',
     initialState: INITIAL_STATE,
     reducers: {
       addToCart: (state, action) => {

@@ -19,6 +19,8 @@ function Home() {
       {/* Hero Section */}
       <Hero/>
    
+      {/* Recomendados Section */}
+      <Recomendados/>
 
       {/* Categorias Section */}
       <CategoriasWrapper>
@@ -26,9 +28,7 @@ function Home() {
         <Categorias />
       </CategoriasWrapper>
 
-      <Recomendados/>
-
-      {/* Populares Section*/}
+      {/* Productos Section*/}
       <ProductosWrapper ref={productsRef} >
         <h2>Nuestros productos</h2>
         <Products />

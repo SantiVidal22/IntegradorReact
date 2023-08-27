@@ -36,7 +36,7 @@ const ModalCart = () => {
   const dispatch = useDispatch();
 
 
-  const totalPrice = cartItems.reduce((acc, item) =>{
+  const totalPrice = cartItems.reduce((acc, item) => {
     return (acc += item.price * item.quantity)
   }, 0)
 

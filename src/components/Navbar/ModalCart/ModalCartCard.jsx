@@ -1,5 +1,5 @@
 import React from 'react'
-import {formatPrice} from '../../../utils'
+import { formatPrice } from '../../../utils'
 import { BsPlusLg } from 'react-icons/bs';
 import { FaMinus } from 'react-icons/fa';
 import { IoMdTrash } from 'react-icons/io';
