@@ -19,7 +19,7 @@ const reducers = combineReducers({
   });
 
 const persistConfig = {
-    key: "root",
+    key: 'root',
     storage,
     whitelist: ['cart', 'user'],
   };
