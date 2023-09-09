@@ -61,7 +61,7 @@ function Navbar() {
               </UserContainerStyled>
           </UserNavStyled>
           <CartNavStyled>
-            <CartIcon/>
+              <CartIcon/>
           </CartNavStyled>
           <motion.div whileTap={{scale: 0.95}}>
             <MenuContainerStyled>

@@ -3,18 +3,23 @@ import { styled } from "styled-components";
 export const CardRecomendadoss = styled.div`
    background: var(--gray-bg);
    width: 300px;
+   height: 450px;
    border-radius: 18px;
    display: flex;
    flex-direction: column;
    align-items: center;
    padding: 1rem;
+   justify-content: space-around;
    img{
     width: 100%;
-    height: 320px;
+    height: 70%;
     margin-bottom: 1rem;
+    object-fit: contain;
+    aspect-ratio: auto;
    }
    h2{
-    font-weight: 600;
+    font-weight: 400;
+    color: white;
     margin: 0;
    }
    p{
@@ -67,13 +72,12 @@ export const ContainerStyled = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
   gap: 10px;
 `;
-export const TitleContainerStyled = styled.h1`
+export const TitleContainerStyled = styled.h2`
   font-size: 22px;
   font-weight: 600;
-  color: black;
+  color: white;
   text-align: left;
   width: 100%;
 `;
@@ -84,7 +88,6 @@ export const ContainerRecomendados = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
   flex-wrap: wrap;
 `;
 

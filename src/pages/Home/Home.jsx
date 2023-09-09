@@ -4,11 +4,7 @@ import Hero from '../../components/Hero/Hero';
 import Products from '../../components/Products/Products';
 import Recomendados from '../../components/Recomendados/Recomendados';
 
-import {
-  CategoriasWrapper,
-  HomeWrapper,
-  ProductosWrapper,
-} from './HomeStyles';
+import { HomeWrapper } from './HomeStyles';
 
 function Home() {
   const productsRef = useRef();
@@ -23,16 +19,16 @@ function Home() {
       <Recomendados/>
 
       {/* Categorias Section */}
-      <CategoriasWrapper>
+      <section>
         <h2>Categorias</h2>
         <Categorias />
-      </CategoriasWrapper>
+      </section>
 
       {/* Productos Section*/}
-      <ProductosWrapper ref={productsRef} >
+      <section ref={productsRef} >
         <h2>Nuestros productos</h2>
         <Products />
-      </ProductosWrapper>
+      </section>
     </HomeWrapper>
   );
 }

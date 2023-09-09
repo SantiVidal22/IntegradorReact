@@ -1,7 +1,6 @@
 import { styled } from "styled-components";
 
 export const ProductsWrapper = styled.div`
-   padding-top: 30px;
    display: flex;
    flex-direction: column;
    width: 100%;
@@ -13,27 +12,31 @@ export const ProductsWrapper = styled.div`
 `;
 
 export const ProductsContainer = styled.div`
-   display: grid;
+   display: flex;
+   flex-wrap: wrap;
    place-items: center;
    justify-content: center;
-   grid-template-columns: repeat(auto-fit, 400px);
+   column-gap: 3.5rem;
    row-gap: 3.5rem;
    width: 100%;
    max-width: 1300px;
-   padding: 1rem 0;
 `;
 
 export const ProductsCard = styled.div`
    background: var(--gray-bg);
    width: 300px;
+   height: 450px;
    border-radius: 18px;
    display: flex;
    flex-direction: column;
    align-items: center;
    padding: 1rem;
+   justify-content: space-around;
    img{
     width: 100%;
-    height: 320px;
+    height: 70%;
+    object-fit: contain;
+    aspect-ratio: auto;
     margin-bottom: 1rem;
    }
    h2{

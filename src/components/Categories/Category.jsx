@@ -1,5 +1,5 @@
 import React from 'react'
-import { CardCategoria, ImgStyled } from './CategoriesStyles'
+import { CardCategoria } from './CategoriesStyles'
 import { selectCategory } from '../../redux/categories/categoriesSlice';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -15,7 +15,7 @@ export const Category = ({img, title, category}) => {
     onClick={() => dispatch(selectCategory(category))}
     whileTap={{scale:0.95}}
     >
-        <ImgStyled src={img} alt={category}/>
+        <img src={img} alt={category}/>
         <h2>{title}</h2>
     </CardCategoria>
   )

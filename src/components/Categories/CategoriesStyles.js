@@ -17,7 +17,8 @@ export const CategoriasContainer = styled.div`
    flex-wrap: wrap;
    justify-content: center;
    align-items: center;
-   gap: 80px;
+   row-gap: 3.5rem;
+   column-gap: 3.5rem;
    @media (max-width: 768px){
     gap: 10px;
    }
@@ -30,8 +31,14 @@ export const CardCategoria = styled(motion.div)`
    text-align: center;
    align-items: center;
    gap: 0.5rem;
-   width: 30%;
+   width: 20%;
+   height: 6.5rem;
    border-radius: 15px;
+   padding: 5px;
+   img{
+      width: 30%;
+      aspect-ratio: auto;
+   }
    background-color: var(--yellow-bg);
    cursor: pointer;
    h2{
@@ -42,7 +49,3 @@ export const CardCategoria = styled(motion.div)`
     width: 50%;
    }
 `;
-
-export const ImgStyled = styled.img`
-   width: 30%;
-`

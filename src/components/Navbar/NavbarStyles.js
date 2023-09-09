@@ -3,15 +3,20 @@ import { motion } from 'framer-motion';
 
 export const NavbarContainerStyled = styled.header`
     height: 100px;
+    width: 100%;
     background-color: transparent;
     flex-direction: row-reverse;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1rem 4rem;
+    justify-content: space-evenly;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     @media (max-width: 768px){
       flex-direction: row;
       padding: unset;
+   }
+   @media (min-width: 769px) and (max-width: 1024px){
+      flex-direction: column;
    }
 `;
 
@@ -33,7 +38,7 @@ export const LinksContainerStyled = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    column-gap: 1rem;
     a{
         padding: 1rem 1.5rem;
     }
@@ -43,8 +48,10 @@ export const LinksContainerStyled = styled.div`
         justify-content: center;
         align-items: center;
         gap: 5px;
+        font-weight: 600;
     }
 `;
+
 
 export const LinkContainerStyled = styled.div`
    font-size: 1.2rem;
@@ -133,3 +140,4 @@ export const CartNavStyled = styled.div`
     font-size: 0.9rem;
   }
 `;
+

@@ -1,26 +1,20 @@
 import styled from 'styled-components';
 
 export const HomeWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 80%;
   padding: 2rem;
   margin: 0 auto;
+  row-gap: 4rem;
   h2 {
     font-weight: 400;
   }
 `;
 
-export const CategoriasWrapper = styled.section`
-  margin-top: 8rem;
-`;
-
-export const ProductosWrapper = styled.section`
-  padding-top: 5rem;
-`;
-
 export const RecomendadosWrapper = styled.section`
-  margin-top: 5rem;
   width: 100%;
-
   h2 {
     font-weight: 400;
   }
@@ -32,3 +26,5 @@ export const ButtonContainerStyled = styled.div`
   gap: 20px;
   margin-top: 3rem;
 `;
+
+
