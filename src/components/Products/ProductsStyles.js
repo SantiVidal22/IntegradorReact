@@ -3,6 +3,7 @@ import { styled } from "styled-components";
 export const ProductsWrapper = styled.div`
    display: flex;
    flex-direction: column;
+   justify-content: center;
    width: 100%;
    max-width: 1300px;
    margin: 0 15px;
@@ -52,6 +53,7 @@ export const ProductsCard = styled.div`
     img{
       height: 50%;
     }
+    width: 90%;
     justify-content: center;
    }
 `;

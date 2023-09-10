@@ -11,6 +11,14 @@ export const HomeWrapper = styled.div`
   h2 {
     font-weight: 400;
   }
+  @media (max-width: 768px){
+    section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  }
 `;
 
 export const RecomendadosWrapper = styled.section`
