@@ -27,8 +27,10 @@ export const CardRecomendadoss = styled.div`
     font-size: 1.2rem;
    }
    @media (max-width: 768px) {
-    width: 200px;
-    text-align: left;
+    img{
+      height: 50%;
+    }
+    justify-content: center;
    }
 `;
 export const RecomendadosInf = styled.div`

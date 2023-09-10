@@ -49,7 +49,6 @@ export const ProductsCard = styled.div`
    }
    @media (max-width: 768px) {
     text-align: left;
-    height: 400px;
     img{
       height: 50%;
     }
