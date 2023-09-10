@@ -25,7 +25,7 @@ export const ProductsContainer = styled.div`
 export const ProductsCard = styled.div`
    background: var(--gray-bg);
    width: 300px;
-   height: 450px;
+   height: 455px;
    border-radius: 18px;
    display: flex;
    flex-direction: column;

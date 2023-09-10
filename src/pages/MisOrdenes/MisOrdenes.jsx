@@ -8,8 +8,7 @@ import CardsMisOrdenes from '../../components/MisOrdenes/CardsMisOrdenes';
 import {
   MisOrdenesBtnContainerStyled,
   MisOrdenesContainerStyled,
-  MisOrdenesPatternStyled,
-  MisOrdenesTitleStyled,
+  MisOrdenesTitleStyled
 } from './MisOrdenesStyles';
 import { getOrders } from '../../axios/axios-orders';
 import { clearError, fetchOrdersFail } from '../../redux/orders/ordersSlice';
@@ -42,10 +41,6 @@ const MisOrdenes = () => {
           <Button onClick={() => navigate('/')}>Volver a comprar</Button>
         </MisOrdenesBtnContainerStyled>
       </MisOrdenesContainerStyled>
-      <MisOrdenesPatternStyled
-        src='https://res.cloudinary.com/dcatzxqqf/image/upload/v1656648434/coding/NucbaZappi/Assets/Pattern_lt5uru.png'
-        alt=''
-      />
     </>
   );
 };

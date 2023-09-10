@@ -32,7 +32,7 @@ export const InputStyled = styled.input`
   ::placeholder {
     opacity: 60%;
   }
-  -webkit-text-fill-color: white;
+  -webkit-text-fill-color: unset;
 
   :-webkit-autofill,
   :-webkit-autofill:hover,
