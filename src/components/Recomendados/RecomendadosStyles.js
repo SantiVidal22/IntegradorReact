@@ -51,6 +51,7 @@ export const ContainerPrice = styled.div`
    flex-direction: column;
    justify-content: space-between;
    align-items: center;
+   row-gap: 1rem;
 `
 
 export const CardPrice = styled.span`
