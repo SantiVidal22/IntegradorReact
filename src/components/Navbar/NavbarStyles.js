@@ -38,7 +38,7 @@ export const LinksContainerStyled = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 1rem;
+    column-gap: 2rem;
     a{
         padding: 1rem 1.5rem;
     }
@@ -50,6 +50,28 @@ export const LinksContainerStyled = styled.div`
         gap: 5px;
         font-weight: 600;
     }
+    .nav-links{
+      display: flex;
+      align-items: center;
+    }
+   @media (max-width: 768px) {
+      .nav-links {
+         display: none;
+      }
+      .nav-links-mobile {
+         position: absolute;
+         border-radius: 0 0 0 10px;
+         color: blueviolet;
+         font-weight: bold;
+         display: block;
+         right: 0;
+         top: 80px;
+         transition: all 0.5s ease-in-out;
+         width: 80%;
+         background-color: #000000e6;
+         padding-bottom: 15px;
+      }
+   }
 `;
 
 
@@ -66,15 +88,15 @@ export const UserContainerStyled = styled(LinkContainerStyled)`
 
 export const HomeContainerStyled = styled(LinkContainerStyled)`
    display: flex;
-   @media (max-width: 769px){
-    display: none;
+   @media (max-width: 768px){
+    display: flex;
    }
 `;
 
 export const MenuuContainerStyled = styled(LinkContainerStyled)`
    display: flex;
-   @media (max-width: 768px){
-    display: none;
+   @media (max-width: 769px){
+    display: flex;
    }
 `;
 

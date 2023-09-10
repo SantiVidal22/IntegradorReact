@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { HomeContainerStyled, CartNavStyled, LinkContainerStyled, LinksContainerStyled, NavbarContainerStyled, UserNavStyled, UserContainerStyled, SpanStyled, MenuContainerStyled, MenuuContainerStyled, ImgContainerStyled, TitleStyled} from './NavbarStyles'
 import {motion} from "framer-motion"
 import {RiHomeSmile2Fill} from "react-icons/ri"
 import {FaUserCircle} from "react-icons/fa"
 import {RiMenu3Fill} from "react-icons/ri";
 import {MdRestaurantMenu} from "react-icons/md"
+import {FaWindowClose} from "react-icons/fa"
 import { Link, useNavigate } from 'react-router-dom';
 import ModalCart from './ModalCart/ModalCart';
 import ModalUser from './ModalUser/ModalUser';
@@ -16,6 +17,7 @@ function Navbar() {
   const currentUser = useSelector(state => state.user.currentUser);
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const [Mobile, setMobile] = useState(false)
 
   return (
     <NavbarContainerStyled>
@@ -27,6 +29,7 @@ function Navbar() {
         </Link>
       </ImgContainerStyled>
       <LinksContainerStyled>
+        <ul className= {Mobile? "nav-links-mobile" : "nav-links"} onClick={() => setMobile(false) }>
           <HomeContainerStyled>
             <motion.div whileTap={{scale: 0.9}}>
             <Link to='/'>
@@ -60,14 +63,15 @@ function Navbar() {
                 <FaUserCircle/>
               </UserContainerStyled>
           </UserNavStyled>
-          <CartNavStyled>
+        </ul>
+        <CartNavStyled>
               <CartIcon/>
-          </CartNavStyled>
-          <motion.div whileTap={{scale: 0.95}}>
-            <MenuContainerStyled>
-              <RiMenu3Fill/>
+        </CartNavStyled>
+        <motion.div whileTap={{scale: 0.95}}>
+            <MenuContainerStyled onClick={() => setMobile(!Mobile)}>
+              {Mobile? <FaWindowClose style={{color: "#ff9d01", fontSize: "30px", paddingtop: "20px", cursor: "pointer"}}/> : <RiMenu3Fill/>}
             </MenuContainerStyled>
-          </motion.div>
+        </motion.div>
       </LinksContainerStyled>
     </NavbarContainerStyled>
     )

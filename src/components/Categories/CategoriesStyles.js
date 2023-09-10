@@ -31,8 +31,8 @@ export const CardCategoria = styled(motion.div)`
    text-align: center;
    align-items: center;
    gap: 0.5rem;
-   width: 20%;
-   height: 6.5rem;
+   width: 30%;
+   height: 9rem;
    border-radius: 15px;
    padding: 5px;
    img{
