@@ -25,7 +25,7 @@ export const ProductsContainer = styled.div`
 export const ProductsCard = styled.div`
    background: var(--gray-bg);
    width: 300px;
-   height: 460px;
+   height: 600px;
    border-radius: 18px;
    display: flex;
    flex-direction: column;
@@ -33,8 +33,7 @@ export const ProductsCard = styled.div`
    padding: 1rem;
    justify-content: space-around;
    img{
-    width: 100%;
-    height: 70%;
+    width: 80%;
     object-fit: contain;
     aspect-ratio: auto;
     margin-bottom: 1rem;
