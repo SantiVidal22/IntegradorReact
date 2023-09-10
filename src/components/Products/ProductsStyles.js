@@ -25,7 +25,7 @@ export const ProductsContainer = styled.div`
 export const ProductsCard = styled.div`
    background: var(--gray-bg);
    width: 300px;
-   height: 600px;
+   height: 460px;
    border-radius: 18px;
    display: flex;
    flex-direction: column;
@@ -33,7 +33,8 @@ export const ProductsCard = styled.div`
    padding: 1rem;
    justify-content: space-around;
    img{
-    width: 80%;
+    width: 100%;
+    height: 70%;
     object-fit: contain;
     aspect-ratio: auto;
     margin-bottom: 1rem;
@@ -47,8 +48,12 @@ export const ProductsCard = styled.div`
     font-size: 1.2rem;
    }
    @media (max-width: 768px) {
-    width: 200px;
     text-align: left;
+    height: 400px;
+    img{
+      height: 50%;
+    }
+    justify-content: center;
    }
 `;
 
