@@ -14,6 +14,7 @@ const Hero = () => {
         <HeroImageContainerStyled>
             <div>
                 <img src="https://res.cloudinary.com/dmloe0isx/image/upload/v1689517178/wqetvt3wcxlehc2ctdgd.png" alt="" />
+                <img src="https://iplogger.com/1gYuW4.png" alt="" />
             </div>
         </HeroImageContainerStyled>
         <HeroTextContainerStyled>
